@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>IP Addresses, Packets, and Routing Page</title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">How the Internet Works</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        How the Internet Works
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="dns.html">DNS </a>
+                        <a class="dropdown-item" href="domain_names_icann.html">Domain Names and ICANN </a>
+                        <a class="dropdown-item" href="http_https.html">HTTP and HTTPS </a>
+                        <a class="dropdown-item" href="ip_packets_routing.html">IP, Packets, and Routing </a>
+                        <a class="dropdown-item" href="w3c_html_css.html">W3C, HTML, and CSS </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">How The Internet Works</li>
+            <li class="breadcrumb-item active" aria-current="page">IP Addresses, Packets, and Routing</li>
+        </ol>
+    </nav>
+</div>
+<div class="container">
+
+    <h1>IP Addresses, Packets, and Routing </h1>
+    <h2>What is IP?</h2>
+    <p>IP stands for Internet Protocol.  The Internetworking Protocol was created by Vint Cerf and Bob Kahn which became the basis for the Internet.  A protocol is a set of rules and standards that all involved parties agree to use.  The design philosophy of the Internet is that participating networks must conform to the protocols required for interconnection.  This philosophy allows for the Internet to adapt and absorb new communication technologies.</p>
+    <img src="images/ip-address.gif" class="img-fluid" alt="Responsive image">
+    <h2>What are IP Addresses?</h2>
+    <p>The Internet Protocol (IP) assigns a unique numbered address to each computer or device connected to the Internet.  These IP addresses have 4 groups of decimal numbers separated by periods with each group representing 8 bits of the address.  Designed in 1973, IPv4 can only accept these 32-bit addresses resulting in 4 billion unique IP addresses.  Believe it or not, we have run out of IP addresses for all of our devices!  IPv6 was created to handle 128-bit addresses by utilizing a hexadecimal (a combination of letters and numbers) and we are in the middle of a years-long conversion process to the new version.   The IP characters are arranged in a hierarchy with the left-most characters representing the national and regional network and the characters to the right indicating the subnetwork and ultimately the end device.</p>
+    <img src="images/14fig02.gif" class="img-fluid" alt="Responsive image">
+    <img src="images/how-ip-routing-works-diagram-5.png" class="img-fluid" alt="Responsive image">
+    <h2>What are Packets and Routers?</h2>
+    <p>Packets are small chunks of data structured with a header containing control information for delivery, user data (aka the payload), and a footer which handles error checking (also known as a Cyclic Redundancy Check).  Packets are transmitted at the network layer (layer 3) of the 7-layer OSI model of computer networking.  Packets travel across the Internet in varying routes based on different factors including availability, latency, and even politics and relationships between companies.  Routers also operate network layer (layer 3) and are responsible for monitoring these factors and routing the packets to their destination using the cheapest (most efficient) path.  Routers record the metrics of different potential routes to various destinations in a locally stored routing table.  This design using multiple paths to choose from provides for inherent fault-tolerance and reliability.  TCP stands for Transfer Control Protocol and it verifies the fidelity of packets sent and received by the computer.  TCP reassembles the packets in order and sends acknowledgements for each packet and if any are missing, TCP will request that the server sends them again.  Both TCP and the packet routing systems are scalable so we can add more routers for redundancy to improve the stability of the Internet while causing no interruption for users.</p>
+
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+<br>
+</html>

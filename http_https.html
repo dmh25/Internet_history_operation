@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>HTTP and HTTPS Page</title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">How the Internet Works</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        How the Internet Works
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="dns.html">DNS </a>
+                        <a class="dropdown-item" href="domain_names_icann.html">Domain Names and ICANN </a>
+                        <a class="dropdown-item" href="http_https.html">HTTP and HTTPS </a>
+                        <a class="dropdown-item" href="ip_packets_routing.html">IP, Packets, and Routing </a>
+                        <a class="dropdown-item" href="w3c_html_css.html">W3C, HTML, and CSS </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">How The Internet Works</li>
+            <li class="breadcrumb-item active" aria-current="page">HTTP and HTTPS</li>
+        </ol>
+    </nav>
+</div>
+<div class="container">
+
+    <h1>HTTP and HTTPS</h1>
+    <img src="images/HTTP-vs-HTTPS.png" class="img-fluid" alt="Responsive image">
+    <h2>What is HTTP?</h2>
+    <p>HTTP stands for Hypertext Transfer Protocol and it is the language used by computers to communicate over the World Wide Web.  The Uniform Resource Locator (URL) is the identifier for a particular website, service, document, etc.  Get requests are the standard method used by client computers to ask the web servers to provide a document.</p>
+    <h2>What is HTTPS?</h2>
+    <p>HTTPs stands for Hypertext Transfer Protocol Secure and it utilizes SSL and TLS to safeguard the data transmissions.  SSL stands for Secure Sockets Layer and TLS stands for Transport Layer Security.  Both of these are protocols for communicating on a secure channel which is indicated by the HTTPS tag in the URL of the resource.  A secure connection requires a digital certificate from the server to verify the authenticity of the web server.  A Certificate Authority (CA) is the entity responsible for issuing the digital certificates and confirming the authenticity of web sites.  A POST request is when the web browser sends data to the web server for authentication.  If the credentials are authentic, the server responds with a login success message as well as cookie data.  The cookie data is how the web server can easily identify you as the user you authenticated as.  For future requests, the web browser includes the cookie data and the server responds quickly with the required data.</p>
+    <h2>What is Encryption?</h2>
+    <p>A URL that includes an HTTPS tag (or a lock icon) indicates a secure connection which requires encryption.  Private data sent over the Internet (which is accessible to the public) can be kept secret using a process called encryption which alters the original message based on certain rules to hide the text.  The rules for altering the text are contained within what is called an algorithm and the rules are based on a key which can be used to decode (decrypt) the message.  Modern day encryption uses 256-bit keys which means each character in blocks of 256 characters in the message is altered differently.  With the pattern only repeating for every 256 characters, it is very difficult for even modern day computers to decrypt but as time marches on and computer components increase in power we will need to increase the size of the keys used.</p>
+    <h2>Types of Encryption</h2>
+    <p>Symmetric Encryption is where, prior to sending any data, the sender and receiver agree upon the use of a single secret key for decrypting the private messages.  Unfortunately, this process is not viable for a publicly accessible communication medium like the Internet.  So computers use Asymmetric Encryption which includes a public key and a private key.  Any computer can use a public key to send messages to particular end user but only the end user has the private key to access the messages and decrypt them.  Asymmetric Encryption is the basis for all secure messaging on the Internet including the SSL and TLS protocols.</p>
+
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+<br>
+</html>
